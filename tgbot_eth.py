@@ -11,14 +11,14 @@ import random
 
 
 # bot creation
-token = '5154039206:AAFI3OuN4KzD6RA1nPkhXYKNofE9MYMVgtE'
+token = ''
 bot = telebot.TeleBot(token)
 
 
 # web driver creation
 options = Options()
 options.add_argument(
-    'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36'
+    'user-agent='
 )
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
